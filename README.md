@@ -8,7 +8,7 @@ A demo mobile app that includes vocabulary memorization and exercises from Turki
 Used technologies:
 <li>Java</li>
 <li>SQLite</li>
-
+<li>Android</li>
 
 ![word1-side](https://github.com/0xcan1337/Wordwise/assets/76397553/dac62f57-13c1-4487-964e-d820c40e11f3)
 ![word4-side](https://github.com/0xcan1337/Wordwise/assets/76397553/ce9cb2ce-a0b7-4bff-afbe-554046f645ae)
