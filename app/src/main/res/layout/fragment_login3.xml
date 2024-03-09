@@ -1,0 +1,94 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonLogin"
+        android:layout_width="293dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="-100dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#F4F0F0"
+        android:text="GİRİŞ YAP"
+        android:textColor="#000000"
+        android:textColorHint="#0A9DDF"
+        android:textSize="14sp"
+        app:cornerRadius="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ıw"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/register"
+        android:layout_width="293dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="150dp"
+        android:backgroundTint="#F4F0F0"
+        android:text="KAYIT OL"
+        android:textColor="#000000"
+        android:textColorHint="#0A9DDF"
+        android:textSize="14sp"
+        app:cornerRadius="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ıw"
+        app:layout_constraintVertical_bias="0.333"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ıw"
+        android:layout_width="234dp"
+        android:layout_height="210dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="150dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/avt" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editTextLoginUsername"
+        android:layout_width="267dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Kullanıcı Adı"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/editTextLoginPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editTextLoginPassword"
+        android:layout_width="267dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="89dp"
+        android:ems="10" android:hint="Şifre"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/ıw"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLoginUsername"
+        tools:ignore="MissingConstraints"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

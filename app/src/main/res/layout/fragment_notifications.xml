@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.DashboardFragment"
+    android:background="#00BCD4">
+
+
+<com.google.android.material.button.MaterialButton
+        android:id="@+id/kelimegetir"
+        android:layout_width="201dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="25dp"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="Kelime Getir"
+        android:textColor="#191717"
+        app:backgroundTint="@android:color/white"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp">
+        <TextView
+            android:id="@+id/gelecekkelime"
+            android:layout_width="205dp"
+            android:layout_height="47dp"
+            android:hint="Kelime:"
+            android:layout_marginTop="300dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            android:layout_marginLeft="110dp"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="299dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/kelimegir1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:textStyle="bold"
+            android:layout_marginTop="340dp"
+            android:layout_marginEnd="150dp"
+            android:layout_marginBottom="25dp"
+            android:ems="10"
+            android:hint="ilk ipucu"
+            android:inputType="text"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/kelimegir2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-150dp"
+            android:visibility="invisible"
+            android:layout_marginTop="340dp"
+            android:textStyle="bold"
+            android:layout_marginStart="-90dp"
+            android:hint="ikinci ipucu"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/kelimegir3"
+            android:layout_width="50dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_marginTop="340dp"
+            android:layout_marginStart="50dp"
+            android:hint="üçüncü ipucu"
+            android:inputType="text" />
+    </LinearLayout>
+
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/sonuc"
+        android:layout_width="205dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="-100dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="200dp"
+        android:hint="sonuc:"
+        android:visibility="invisible"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kelimegir3" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ıv"
+        android:layout_width="224dp"
+        android:layout_height="255dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="-20dp"
+        app:layout_constraintBottom_toTopOf="@+id/kelimegetir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.909"
+        app:srcCompat="@drawable/aw" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/ipucugetir"
+        android:layout_width="201dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginEnd="150dp"
+        android:backgroundTint="#F8F1F1"
+        android:text="İpucu Getir"
+        android:textColor="#100F0F"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sonuc"
+        tools:ignore="MissingConstraints" />
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/dene"
+        android:layout_width="201dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="150dp"
+        android:backgroundTint="#F8F1F1"
+        android:text="Cevabı Gönder"
+        android:textColor="#100F0F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sonuc"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/cevap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:layout_marginStart="110dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Cevabını gir:"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="350dp"
+        android:layout_height="280dp"
+        android:layout_margin="16dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="150dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:id="@+id/ipucubaslik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="10dp"
+            android:text="İpucu oyunu nasıl oynanır?"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/ipucuaciklama" />
+
+
+        <TextView
+            android:id="@+id/ipucuaciklama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:text="İpucu oyununda her bir kelimenin türkçe karşılığı için üç farklı ipucu harfiniz bulunacak. Bu harfleri ipucu butonuna basarak görebilirsin, bol şanslar!"
+            android:textSize="15dp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewRateApp" />
+
+        <TextView
+            android:id="@+id/textViewRateApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="120dp"
+            android:text="Uygulamamızı puanlayın"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewRateApp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="150dp"
+            android:numStars="5"
+            android:stepSize="1"
+            app:layout_constraintTop_toBottomOf="@+id/textViewRateApp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="220dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/simdidegil"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:text="Şimdi Değil" />
+
+            <Button
+                android:id="@+id/puanla"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="Puanla" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/kolon1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:visibility="invisible"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/puan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="670dp"
+            android:layout_marginLeft="150dp"
+            android:textStyle="bold"
+            android:text="Puan:"
+            />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

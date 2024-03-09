@@ -1,0 +1,25 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Buton normal durumda -->
+    <item android:state_enabled="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#FF4081"/> <!-- Butonun normal arkaplan rengi -->
+            <corners android:radius="0dp"/> <!-- Butonun kenar yuvarlaklığı -->
+        </shape>
+    </item>
+    <!-- Buton tıklanınca -->
+    <item android:state_pressed="true" android:state_enabled="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#D81B60"/> <!-- Butonun tıklanıldığında arkaplan rengi -->
+            <corners android:radius="0dp"/> <!-- Butonun kenar yuvarlaklığı -->
+        </shape>
+    </item>
+    <!-- Buton devre dışı bırakıldığında -->
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <solid android:color="#9E9E9E"/> <!-- Butonun devre dışı bırakıldığında arkaplan rengi -->
+            <corners android:radius="0dp"/> <!-- Butonun kenar yuvarlaklığı -->
+        </shape>
+    </item>
+
+
+</selector>
