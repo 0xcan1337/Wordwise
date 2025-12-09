@@ -123,7 +123,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 ID_USER + ", " +
                 USERNAME_USER + ", " +
                 PASSWORD_USER + ", " +
-                EMAIL_USER + ") VALUES ('1', 'cankat', 'cankat1234', 'cankat@yokmail.com')");
+                EMAIL_USER + ") VALUES ('1', '**********', '************', '*************@yokmail.com')");
 
 
 
